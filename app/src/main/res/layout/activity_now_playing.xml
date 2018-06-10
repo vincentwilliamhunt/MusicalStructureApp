@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NowPlaying">
+
+    <ImageView
+        android:src="@drawable/genericiconmusic"
+        android:id="@+id/now_playing_album"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="40dp"
+        android:layout_weight="80"
+        />
+
+    <TextView
+        android:id="@+id/now_playing_song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/now_playing_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/previous_button"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_skip_previous"
+            android:layout_height="30dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/play_button"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play_circle_filled"/>
+
+        <ImageView
+            android:id="@+id/forward_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_skip_next" />
+
+    </LinearLayout>
+
+</LinearLayout>
