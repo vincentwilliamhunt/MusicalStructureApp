@@ -25,7 +25,9 @@
         <activity
             android:name=".SongsActivity"
             android:label="@string/your_songs" />
-        <activity android:name=".NowPlaying"></activity>
+        <activity android:name=".NowPlaying"
+            android:label="@string/now_playing">
+        </activity>
     </application>
 
 </manifest>

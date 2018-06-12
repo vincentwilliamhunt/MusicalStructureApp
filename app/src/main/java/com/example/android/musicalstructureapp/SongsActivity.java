@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -15,6 +16,24 @@ public class SongsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_songs);
+
+        Button homeButton = (Button) findViewById(R.id.home_button);
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent home = new Intent(SongsActivity.this, MainActivity.class);
+                startActivity(home);
+            }
+        });
+
+        Button nowPlayingButton = (Button) findViewById(R.id.now_playing_button);
+        nowPlayingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nowPlaying = new Intent(SongsActivity.this, NowPlaying.class);
+                startActivity(nowPlaying);
+            }
+        });
 
         String altJ = "alt-J";
         int awesomeWave = R.drawable.anawesomewave;

@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">MusicalStructureApp</string>
+    <string name="home">Home</string>
     <string name="your_artists">Your artists</string>
     <string name="your_albums">Your albums</string>
     <string name="album_art">album artwork</string>
     <string name="your_songs">Your songs</string>
+    <string name="now_playing">Now Playing</string>
 </resources>

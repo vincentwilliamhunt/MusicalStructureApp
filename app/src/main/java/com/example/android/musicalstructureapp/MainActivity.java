@@ -48,5 +48,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView nowPlaying = (TextView) findViewById(R.id.now_playing);
+        nowPlaying.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nowPlaying = new Intent(MainActivity.this, NowPlaying.class);
+                startActivity(nowPlaying);
+            }
+        });
+
     }
 }

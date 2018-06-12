@@ -38,4 +38,14 @@
         android:layout_height="1dp"
         style="@style/Line"/>
 
+    <TextView
+        android:id="@+id/now_playing"
+        style="@style/CategoryStyle"
+        android:text="@string/now_playing"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        style="@style/Line"/>
+
 </LinearLayout>

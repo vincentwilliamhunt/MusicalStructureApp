@@ -1,10 +1,12 @@
 package com.example.android.musicalstructureapp;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -16,6 +18,24 @@ public class AlbumsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_albums);
+
+        Button homeButton = (Button) findViewById(R.id.home_button);
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent home = new Intent(AlbumsActivity.this, MainActivity.class);
+                startActivity(home);
+            }
+        });
+
+        Button nowPlayingButton = (Button) findViewById(R.id.now_playing_button);
+        nowPlayingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nowPlaying = new Intent(AlbumsActivity.this, NowPlaying.class);
+                startActivity(nowPlaying);
+            }
+        });
 
         //create an ArrayList of album objects:
         ArrayList<Album> yourAlbums = new ArrayList<Album>();
